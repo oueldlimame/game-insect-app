@@ -1,0 +1,202 @@
+* {
+	margin: 0px;
+	padding: 0px;
+}
+html, body {
+	height: 100%;
+}
+body {
+	background-image: linear-gradient(rgba(255,255,255,.8), rgba(255,255,255,.8)),url("gazon.png");
+	overflow: hidden;
+}
+#getBonusPoint {
+	position: absolute;
+	height: 50px;
+	width: 50px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	border-radius: 50%;
+	opacity: 0;
+	color: #FFF;
+	cursor: pointer;
+}
+@keyframes bonuspointget {
+	0% {
+		top: 15%;
+		opacity: 1;
+	}
+	10% {
+		top: 20%;
+		opacity: 0.9;
+	}
+	30% {
+		top: 30%;
+		opacity: 0.8;
+	}
+	40% {
+		top: 40%;
+		opacity: 0.7;
+	}
+	50% {
+		top: 50%;
+		opacity: 0.6;
+	}
+	60% {
+		top: 60%;
+		opacity: 0.5;
+	}
+	70% {
+		top: 70%;
+		opacity: 0.4;
+	}
+	80% {
+		top: 80%;
+		opacity: 0.3;
+	}
+	90% {
+		top: 90%;
+		opacity: 0.2;
+	}
+	100% {
+		top: 99%;
+		opacity: 0.1;
+	}
+}
+#comment {
+	position: absolute;
+  	top: 50%;
+  	left: 50%;
+  	transform: translate(-50%, -50%);
+  	color: #FFF;
+  	z-index: 99999
+}
+#containe {
+	position: relative;
+	height: 100%;
+}
+#scoreTag {
+	border: 1px solid black;
+	padding: 25px;
+	width: 500px;
+  	background: url(bonus.png);
+  	background-color: #BDBFBF;
+  	border-radius: 25px;
+  	opacity: 0.8;
+  	background-repeat: no-repeat;
+  	z-index: -1
+}
+#spanResBonus {
+	font-size: 150%;
+	
+}
+.resBonus {
+	position: absolute;
+	top: 20%;
+	left: 25%;
+	border-radius: 25px;
+	z-index: 9999;
+	height: 300px;
+	width: 900px;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	opacity: 0;
+	background-color: #F8F9F9;
+}
+
+.header {
+	position: absolute;
+	top: 50%;
+	left: 40%;
+}
+.boxMessage {
+	position: absolute;
+	left: 70%;
+	width: 20%;
+	height: 10%;
+	text-align: center;
+	vertical-align: middle;
+	line-height: 90px;
+	opacity: 0;
+	top: 10%;
+	z-index: 9999
+}
+@keyframes moveins {
+	0% {
+		top: 90%;
+		opacity: 1
+	}
+	40% {
+		top: 50%;
+		opacity: 0.8
+	}
+	50% {
+		top: 40%;
+		opacity: 0.3
+	}
+	90% {
+		top: 20%;
+		opacity: 0.1
+	}
+	100% {
+		top: 10%;
+		opacity: 0
+	}
+}
+.boxMessage>span {
+	 font-size: 120%
+}
+.content {
+	opacity: 0;
+	height: 90%;
+	position: relative;
+	top: 1%;
+}
+img {
+	height: 150px;
+	width: 150px;
+	cursor:url('mobid.png'), pointer;
+	visibility: hidden;
+	user-select: none;
+}
+#htag:active {
+	animation: smoke 1s 1;
+}
+@keyframes smoke {
+	0% {
+		opacity: 1;
+	}
+	50% {
+		opacity: 0.5;
+		transform: translate3d(10px, 50px, 50px) scale(1);
+		filter: blur(30px);
+	}
+	100% {
+		opacity: 0;
+		transform: translate3d(5px, 100px, 100px) scale(4);
+		filter: blur(100px);
+	}
+}
+.content>h1 {
+	margin-left: 40%;
+	margin-top: 10px;
+	width: 20%;
+	padding-top: 1%;
+	padding-bottom: 1%;
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 120%
+}
+.game {
+	height: 100%;
+	position: relative;
+}
+@keyframes transf {
+	0% {
+		font-size: 50%;
+	}
+	100% {
+		font-size: 500%;
+	}
+}
